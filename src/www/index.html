@@ -2,9 +2,40 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link href="css/main.css">
         <title>wofkflow test</title>
     </head>
     <body>
+        <div>{{ hoge }}</div>
+        
+        <div v-if="isList" id="dvContainerList">
+        <!-- 画面１：申請書一覧 -->
+
+            <!-- ヘッダー -->
+            <!-- TODO: ヘッダーは各画面で定義せずに共通化できない？ -->
+            <div class="dvAppHeader">
+                <div id="">
+                    <div id="dvLogo"></div>
+                </div>
+                <div>
+                    header right
+                </div>
+            </div>
+            
+            <!-- メイン -->
+            <div id="divListMain">
+                list
+            </div>
+        </div>
+        
+        <div v-if="isApprove" id="dvContainerApprove">
+        <!-- 画面２：承認画面 -->
+            approve
+        </div>
+        
+        <!-- test button -->
+        <button type="button" v-on:click="test">test</button>
+        
         <script src="js/bundle.js"></script>
     </body>
 </html>
