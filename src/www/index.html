@@ -6,7 +6,7 @@
         <title>wofkflow test</title>
     </head>
     <body>
-        <div>{{ hoge }}</div>
+        <div>{{ hoge }}</div>   <!-- test code -->
         
         <div v-if="isList" id="dvContainerList">
         <!-- 画面１：申請書一覧 -->
@@ -14,15 +14,16 @@
             <!-- ヘッダー -->
             <!-- TODO: ヘッダーは各画面で定義せずに共通化できない？ -->
             <div class="dvAppHeader">
-                <div id="">
+                <div class="dvAppHeaderLeft">
                     <div id="dvLogo"></div>
                 </div>
-                <div>
-                    header right
+                <div class="dvAppHeaderRight">
+                    <button type="button">{{ lblFBBoot }}</button>
+                    <button type="button">{{ lblLogout }}</button>
                 </div>
             </div>
             
-            <!-- メイン -->
+            <!-- 一覧メイン -->
             <div id="divListMain">
                 list
             </div>

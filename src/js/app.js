@@ -3,6 +3,7 @@ Vue.use(require('vue-resource'));   // xhr用
 
 /**
  * ルートオブジェクト??
+ * 　→これが何かよくわからん
  */
 var vm = new Vue({
     el: 'body',
